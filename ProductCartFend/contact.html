@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Product<span>Cart</span></div>
+            <ul class="menu">
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="faq.html">Въпроси</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+              
+            </ul>
+            <a href="software.html" class="contact-btn">Софтуер</a>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2>Свържете се с нас!</h2>
+            <p>Чувствайте се свободни да се Свържете с нас!</p>
+            <p>ProductCartBusiness@gmail.com</p>
+            <p>+359899114141</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+                <p id="success-message" class="success-message hidden">Your message has been sent successfully!</p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 ProductCart | Всички права запазени.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>

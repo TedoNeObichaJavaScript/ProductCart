@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Manager</title>
+    <link rel="stylesheet" href="software.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Product<span>Cart</span></div>
+            <ul class="menu">
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="faq.html">Въпроси</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+            <a href="software.html" class="contact-btn">Софтуер</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="title">ProductCart</h1>
+        
+        <div class="form">
+            <h2>Add/Edit Product</h2>
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" placeholder="Enter product name">
+
+            <label for="productPrice">Product Price (per kilo):</label>
+            <input type="number" id="productPrice" placeholder="Enter price per kilo">
+
+            <label for="productCategory">Category:</label>
+            <select id="productCategory">
+                <option value="Starter">Choose product</option>
+                <option value="Diary Product">Milk</option>
+                <option value="Meat">Chicken Meat</option>
+                <option value="Dessert">Desserts</option>
+                <option value="Vegetables">Vegetables</option>
+                <option value="Fruit">Fruit</option>
+                <option value="Meat">Beef</option>
+                <option value="Bread">Bread</option>
+                <option value="Meat">Pork meat</option>
+
+                <option value="add-category" id="addCategoryOption">Add Category</option>
+            </select>
+
+            <label for="totalStock">Total Stock (kilos):</label>
+            <input type="number" id="totalStock" placeholder="Enter total stock in kilos">
+
+            <label for="usedStock">Used Stock (kilos):</label>
+            <input type="number" id="usedStock" placeholder="Enter used stock in kilos">
+<!-- Add these in your existing form -->
+
+
+
+<label for="wastage">Wastage (kilos):</label>
+<input type="number" id="wastage"  placeholder="Wastage will appear here">
+
+<button id="calculateWastageBtn">Calculate Wastage</button>
+
+            <p id="remainingStock">Remaining Stock: 0 kilos</p>
+
+            <button id="addBtn">Add</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+
+        <div class="table-container">
+            <h2>Product List</h2>
+            <table id="productTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price (per kilo)</th>
+                        <th>Category</th>
+                        <th>Remaining Stock (kilos)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows dynamically populated -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="software.js"></script>
+</body>
+</html>
