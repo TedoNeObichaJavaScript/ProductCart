@@ -59,6 +59,8 @@ model Session {
   sessionToken String   @unique
   userId       String
   expires      DateTime
+  // Set once the session has passed the TOTP challenge (when 2FA is enabled).
+  twoFactorVerified Boolean @default(false)
   user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
