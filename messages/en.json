@@ -1,0 +1,203 @@
+{
+  "Common": {
+    "appName": "ProductCart",
+    "tagline": "Inventory, in control.",
+    "loading": "Loading…",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "update": "Update",
+    "search": "Search",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "getStarted": "Get started",
+    "learnMore": "Learn more"
+  },
+  "Nav": {
+    "home": "Home",
+    "features": "Features",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "software": "Software",
+    "dashboard": "Dashboard",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "Theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "Locale": {
+    "switch": "Switch language",
+    "bg": "Български",
+    "en": "English"
+  },
+  "Hero": {
+    "badge": "New generation software",
+    "titleLead": "ProductCart, the next-generation software for managing",
+    "rotating": ["Restaurants", "Bars", "Clubs", "Shops", "Cafés"],
+    "subtitle": "Track stock, cut waste and run your venue with confidence — from a single, beautiful dashboard that works on every device.",
+    "ctaPrimary": "Get in touch",
+    "ctaSecondary": "Explore the software"
+  },
+  "Features": {
+    "venuesTitle": "Key functionality",
+    "venuesSubtitle": "One platform, tailored to how your venue actually works.",
+    "venues": {
+      "bars": {
+        "title": "Bars",
+        "description": "Efficient management of stock, orders and service at the bar."
+      },
+      "clubs": {
+        "title": "Clubs",
+        "description": "Track sales and organize events with ease."
+      },
+      "restaurants": {
+        "title": "Restaurants",
+        "description": "Modernize your menu and optimize your workflows."
+      },
+      "cafes": {
+        "title": "Cafés",
+        "description": "Build loyalty with personalized offers for your guests."
+      }
+    },
+    "toolsTitle": "Grow your business with the right tools.",
+    "toolsSubtitle": "Everything you need to succeed, in one place.",
+    "tools": {
+      "ui": {
+        "title": "New-generation interface",
+        "description": "Train yourself or a staff member to use ProductCart in under 30 minutes."
+      },
+      "os": {
+        "title": "Works on every operating system",
+        "description": "ProductCart runs on Windows, Linux, Mac, iOS and Android."
+      },
+      "mobile": {
+        "title": "Mobile app for your business",
+        "description": "Monitor your business and pull reports anywhere, anytime."
+      },
+      "support": {
+        "title": "24/7 in-house phone support",
+        "description": "Support over phone or email, 24/7/365."
+      }
+    }
+  },
+  "Faq": {
+    "title": "What our customers ask",
+    "subtitle": "Everything you need to know about ProductCart.",
+    "items": {
+      "audience": {
+        "question": "Who is ProductCart for?",
+        "answer": "For restaurants, clubs, bars, cafés, shops and self-service venues."
+      },
+      "why": {
+        "question": "Why should I use ProductCart?",
+        "answer": "ProductCart offers an intuitive interface and a rich set of features."
+      },
+      "migration": {
+        "question": "How do I move my data from my old software to ProductCart?",
+        "answer": "The process is automated, and our team will help you with the migration."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Get in touch!",
+    "subtitle": "Feel free to reach out to us anytime.",
+    "email": "ProductCartBusiness@gmail.com",
+    "phone": "+359 899 114 141",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "message": "Message",
+      "messagePlaceholder": "Write your message here…",
+      "submit": "Send message",
+      "success": "Your message has been sent successfully!",
+      "error": "Something went wrong. Please try again."
+    }
+  },
+  "Footer": {
+    "rights": "All rights reserved.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "Auth": {
+    "signInTitle": "Welcome back",
+    "signInSubtitle": "Sign in to manage your inventory.",
+    "continueWithGoogle": "Continue with Google",
+    "continueWithGithub": "Continue with GitHub",
+    "termsNotice": "By continuing you agree to our Terms and Privacy Policy.",
+    "signedOut": "You have been signed out."
+  },
+  "Dashboard": {
+    "title": "Dashboard",
+    "overview": "Overview",
+    "welcome": "Welcome back, {name}",
+    "stats": {
+      "products": "Products",
+      "totalStock": "Total stock",
+      "lowStock": "Low stock",
+      "wastage": "Wastage"
+    }
+  },
+  "Inventory": {
+    "title": "Inventory",
+    "subtitle": "Add, edit and track every product in your venue.",
+    "addProduct": "Add product",
+    "editProduct": "Edit product",
+    "newProduct": "New product",
+    "empty": {
+      "title": "No products yet",
+      "description": "Add your first product to start tracking stock and wastage.",
+      "cta": "Add your first product"
+    },
+    "fields": {
+      "name": "Product name",
+      "namePlaceholder": "e.g. Chicken breast",
+      "price": "Price per unit",
+      "category": "Category",
+      "unit": "Unit",
+      "totalStock": "Total stock",
+      "usedStock": "Used stock",
+      "wastage": "Wastage",
+      "reorderLevel": "Reorder level",
+      "remainingStock": "Remaining stock"
+    },
+    "table": {
+      "name": "Name",
+      "price": "Price",
+      "category": "Category",
+      "remaining": "Remaining",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "ok": "In stock",
+      "low": "Low",
+      "out": "Out of stock"
+    },
+    "toasts": {
+      "created": "Product added",
+      "updated": "Product updated",
+      "deleted": "Product deleted",
+      "error": "Could not save the product"
+    },
+    "confirmDelete": "Delete {name}? This cannot be undone."
+  },
+  "Errors": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try again.",
+    "retry": "Try again",
+    "notFoundTitle": "Page not found",
+    "notFoundDescription": "The page you’re looking for doesn’t exist or has moved.",
+    "backHome": "Back home"
+  }
+}
