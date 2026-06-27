@@ -8,6 +8,49 @@ This repository is a complete, modern rebuild of the original static HTML/CSS/JS
 
 ---
 
+## 📸 Preview
+
+<p align="center">
+  <img src=".github/screenshots/hero-light.png" alt="ProductCart landing page" width="100%" />
+</p>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src=".github/screenshots/home-light.png" alt="Landing page — light mode" /><br />
+      <sub><b>Landing — light</b></sub>
+    </td>
+    <td width="50%" valign="top">
+      <img src=".github/screenshots/home-dark.png" alt="Landing page — dark mode" /><br />
+      <sub><b>Landing — dark</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src=".github/screenshots/faq-light.png" alt="FAQ page" /><br />
+      <sub><b>FAQ — animated accordion</b></sub>
+    </td>
+    <td width="50%" valign="top">
+      <img src=".github/screenshots/contact-dark.png" alt="Contact page — dark mode" /><br />
+      <sub><b>Contact — validated form</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src=".github/screenshots/signin-dark.png" alt="Sign in with Google or GitHub" /><br />
+      <sub><b>Sign in — Google / GitHub OAuth</b></sub>
+    </td>
+    <td width="50%" valign="top" align="center">
+      <img src=".github/screenshots/mobile-home.png" alt="Mobile responsive layout" width="280" /><br />
+      <sub><b>Mobile-first responsive</b></sub>
+    </td>
+  </tr>
+</table>
+
+> Localized in Bulgarian and English, with a seamless dark/light toggle and Framer Motion micro-interactions throughout.
+
+---
+
 ## ✨ Features
 
 - **Marketing site** — animated hero, feature grids, FAQ accordion and a validated contact form.
@@ -24,18 +67,18 @@ This repository is a complete, modern rebuild of the original static HTML/CSS/JS
 
 ## 🧱 Tech stack
 
-| Layer      | Technology                                                                            |
-| ---------- | ------------------------------------------------------------------------------------- |
-| Framework  | [Next.js 16](https://nextjs.org) (App Router, React 19, Turbopack)                     |
-| Language   | TypeScript (strict)                                                                   |
-| Styling    | Tailwind CSS v4 + [shadcn/ui](https://ui.shadcn.com) (Radix primitives)               |
-| Animation  | [Framer Motion](https://www.framer.com/motion/)                                       |
-| Auth       | [Auth.js v5 (NextAuth)](https://authjs.dev)                                           |
+| Layer      | Technology                                                                                               |
+| ---------- | -------------------------------------------------------------------------------------------------------- |
+| Framework  | [Next.js 16](https://nextjs.org) (App Router, React 19, Turbopack)                                       |
+| Language   | TypeScript (strict)                                                                                      |
+| Styling    | Tailwind CSS v4 + [shadcn/ui](https://ui.shadcn.com) (Radix primitives)                                  |
+| Animation  | [Framer Motion](https://www.framer.com/motion/)                                                          |
+| Auth       | [Auth.js v5 (NextAuth)](https://authjs.dev)                                                              |
 | Database   | PostgreSQL (e.g. [Neon](https://neon.tech)) via [Prisma 7](https://www.prisma.io) + `@prisma/adapter-pg` |
-| Validation | [Zod](https://zod.dev)                                                                |
-| i18n       | [next-intl](https://next-intl.dev)                                                    |
-| State      | [Zustand](https://zustand.docs.pmnd.rs) (client UI only)                              |
-| Tooling    | ESLint, Prettier, TypeScript                                                          |
+| Validation | [Zod](https://zod.dev)                                                                                   |
+| i18n       | [next-intl](https://next-intl.dev)                                                                       |
+| State      | [Zustand](https://zustand.docs.pmnd.rs) (client UI only)                                                 |
+| Tooling    | ESLint, Prettier, TypeScript                                                                             |
 
 ---
 
@@ -91,13 +134,13 @@ Copy the example and fill in your values:
 cp .env.example .env
 ```
 
-| Variable                                  | Description                                                                     |
-| ----------------------------------------- | ------------------------------------------------------------------------------- |
-| `DATABASE_URL`                            | Postgres pooled connection string (Neon)                                        |
-| `DIRECT_URL`                              | Postgres direct connection (migrations) — optional                              |
-| `AUTH_SECRET`                             | Run `npx auth secret` to generate                                               |
-| `AUTH_GOOGLE_ID` / `AUTH_GOOGLE_SECRET`   | [Google OAuth](https://console.cloud.google.com/apis/credentials) credentials   |
-| `AUTH_GITHUB_ID` / `AUTH_GITHUB_SECRET`   | [GitHub OAuth](https://github.com/settings/developers) app credentials          |
+| Variable                                | Description                                                                   |
+| --------------------------------------- | ----------------------------------------------------------------------------- |
+| `DATABASE_URL`                          | Postgres pooled connection string (Neon)                                      |
+| `DIRECT_URL`                            | Postgres direct connection (migrations) — optional                            |
+| `AUTH_SECRET`                           | Run `npx auth secret` to generate                                             |
+| `AUTH_GOOGLE_ID` / `AUTH_GOOGLE_SECRET` | [Google OAuth](https://console.cloud.google.com/apis/credentials) credentials |
+| `AUTH_GITHUB_ID` / `AUTH_GITHUB_SECRET` | [GitHub OAuth](https://github.com/settings/developers) app credentials        |
 
 > OAuth redirect URL: `http://localhost:3000/api/auth/callback/{google|github}`
 
@@ -120,18 +163,18 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## 📜 Scripts
 
-| Script                            | Description                            |
-| --------------------------------- | -------------------------------------- |
-| `npm run dev`                     | Start the dev server                   |
-| `npm run build`                   | Generate Prisma client + prod build    |
-| `npm run start`                   | Run the production server              |
-| `npm run lint` / `lint:fix`       | ESLint                                 |
-| `npm run format` / `format:check` | Prettier                               |
-| `npm run typecheck`               | `tsc --noEmit`                         |
-| `npm run db:push`                 | Push schema to the database            |
-| `npm run db:migrate`              | Create a migration                     |
-| `npm run db:studio`               | Open Prisma Studio                     |
-| `npm run db:seed`                 | Seed demo data                         |
+| Script                            | Description                         |
+| --------------------------------- | ----------------------------------- |
+| `npm run dev`                     | Start the dev server                |
+| `npm run build`                   | Generate Prisma client + prod build |
+| `npm run start`                   | Run the production server           |
+| `npm run lint` / `lint:fix`       | ESLint                              |
+| `npm run format` / `format:check` | Prettier                            |
+| `npm run typecheck`               | `tsc --noEmit`                      |
+| `npm run db:push`                 | Push schema to the database         |
+| `npm run db:migrate`              | Create a migration                  |
+| `npm run db:studio`               | Open Prisma Studio                  |
+| `npm run db:seed`                 | Seed demo data                      |
 
 ---
 
