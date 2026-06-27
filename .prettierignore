@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+build
+coverage
+legacy
+prisma/migrations
+src/generated
+src/components/ui
+*.lock
+package-lock.json
+pnpm-lock.yaml
