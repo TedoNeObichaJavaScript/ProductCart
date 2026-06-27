@@ -22,6 +22,7 @@
     "contact": "Contact",
     "software": "Software",
     "dashboard": "Dashboard",
+    "settings": "Settings",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
@@ -199,5 +200,38 @@
     "notFoundTitle": "Page not found",
     "notFoundDescription": "The page you’re looking for doesn’t exist or has moved.",
     "backHome": "Back home"
+  },
+  "Settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account and security preferences.",
+    "profile": {
+      "title": "Profile",
+      "name": "Name",
+      "email": "Email"
+    },
+    "security": {
+      "title": "Security"
+    }
+  },
+  "TwoFactor": {
+    "title": "Two-factor authentication",
+    "description": "Add an extra layer of security using an authenticator app.",
+    "statusOn": "Enabled",
+    "statusOff": "Disabled",
+    "enable": "Enable 2FA",
+    "disable": "Disable 2FA",
+    "setupTitle": "Scan the QR code",
+    "setupHint": "Scan it with Google Authenticator, 1Password or Authy, then enter the 6-digit code to confirm.",
+    "manualKey": "Or enter this key manually:",
+    "codeLabel": "Verification code",
+    "codePlaceholder": "000000",
+    "confirm": "Confirm & enable",
+    "cancel": "Cancel",
+    "enabledToast": "Two-factor authentication enabled",
+    "disabledToast": "Two-factor authentication disabled",
+    "errorToast": "Something went wrong",
+    "challengeTitle": "Two-factor verification",
+    "challengeSubtitle": "Enter the 6-digit code from your authenticator app to continue.",
+    "verify": "Verify"
   }
 }

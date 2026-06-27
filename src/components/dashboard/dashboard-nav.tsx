@@ -1,6 +1,11 @@
 "use client";
 
-import { Boxes, LayoutDashboard, type LucideIcon } from "lucide-react";
+import {
+  Boxes,
+  LayoutDashboard,
+  Settings,
+  type LucideIcon,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { Link, usePathname } from "@/i18n/navigation";
@@ -14,6 +19,7 @@ export function DashboardNav({ onNavigate }: { onNavigate?: () => void }) {
   const items: { href: string; icon: LucideIcon; label: string }[] = [
     { href: "/dashboard", icon: LayoutDashboard, label: tNav("dashboard") },
     { href: "/inventory", icon: Boxes, label: tInv("title") },
+    { href: "/settings", icon: Settings, label: tNav("settings") },
   ];
 
   return (

@@ -1,9 +1,10 @@
 import { setRequestLocale } from "next-intl/server";
+import { redirect } from "next/navigation";
 
 import { Logo } from "@/components/brand/logo";
 import { DashboardNav } from "@/components/dashboard/dashboard-nav";
 import { DashboardTopbar } from "@/components/dashboard/dashboard-topbar";
-import { requireUser } from "@/lib/session";
+import { isTwoFactorSatisfied, requireUser } from "@/lib/session";
 
 export default async function AppLayout({
   children,
@@ -17,6 +18,11 @@ export default async function AppLayout({
 
   // Guards every route in this group — redirects to /sign-in when signed out.
   const user = await requireUser();
+
+  // Enforce the TOTP challenge when 2FA is enabled but unverified this session.
+  if (!(await isTwoFactorSatisfied(user))) {
+    redirect("/verify-2fa");
+  }
 
   return (
     <div className="flex min-h-screen">
